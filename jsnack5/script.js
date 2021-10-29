@@ -7,10 +7,10 @@ const arrNum = [];
 
 //chiedi per 6 volte un numero all'utente
 for(let i = 0; i < 6; i++) {
-    let num = prompt("scrivi un numero")
+    let num = parseInt(prompt("scrivi un numero"));
 
     if(num % 2 !== 0){
-        arrNum.push(num)
+        arrNum.push(num);
     }
 }
 console.log(arrNum);
