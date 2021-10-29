@@ -12,9 +12,11 @@ let secondWord = prompt("scrivi una parola")
 if(firstWord.length > secondWord.length) {
     word.innerHTML = secondWord
     word1.innerHTML = firstWord
-} else {
+} else if(firstWord.length < secondWord.length) {
     word.innerHTML = firstWord
     word1.innerHTML = secondWord
+} else {
+    word.innerHTML = "ei sono uguali"
 }
     //stampare quella più corta
     //stampare quella più lunga
