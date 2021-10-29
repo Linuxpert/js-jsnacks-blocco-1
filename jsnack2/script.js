@@ -10,13 +10,13 @@ let secondWord = prompt("scrivi una parola")
 
 //confrontare la lunghezza delle parole
 if(firstWord.length > secondWord.length) {
-    word.innerHTML = secondWord
-    word1.innerHTML = firstWord
+    word.innerHTML = secondWord;
+    word1.innerHTML = firstWord;
 } else if(firstWord.length < secondWord.length) {
-    word.innerHTML = firstWord
-    word1.innerHTML = secondWord
+    word.innerHTML = firstWord;
+    word1.innerHTML = secondWord;
 } else {
-    word.innerHTML = "ei sono uguali"
+    word.innerHTML = "ei sono uguali";
 }
     //stampare quella più corta
     //stampare quella più lunga
