@@ -2,21 +2,27 @@
 
 //creare un arrey vuoto
 const randomNum = [];
-let found = false;
 //generare 50 numeri random
-while(randomNum.length < 50){
-    let num = Math.floor(Math.random() * 100) +1;
-    // randomNum.push(num)
-    if(num !== randomNum){
-        found = true;
+while (randomNum.length < 50){
+
+    const num = Math.floor(Math.random() * 50) + 1;
+
+    let found = false;
+
+        for(i = 0; i < randomNum.length; i ++){
+            if(num === randomNum[i]){
+                found = true;
+            }
+        }
+    
+
+    if(found === false){
+        randomNum.push(num);
     }
     
 }
 
-if(found === true){
-    randomNum.push(num)
-}
 
-console.log(randomNum);
 
 //inserire nell'arrey i numeri non replicati
+console.log(randomNum);
