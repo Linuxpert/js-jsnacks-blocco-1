@@ -7,13 +7,14 @@ while (randomNum.length < 50){
 
     const num = Math.floor(Math.random() * 50) + 1;
 
-    let found = false;
+    // let found = false;
+    let found = randomNum.includes(num);
 
-        for(i = 0; i < randomNum.length; i ++){
-            if(num === randomNum[i]){
-                found = true;
-            }
-        }
+        // for(i = 0; i < randomNum.length; i ++){
+        //     if(num === randomNum[i]){
+        //         found = true;
+        //     }
+        // }
     
 
     if(found === false){
